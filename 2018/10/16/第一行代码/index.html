@@ -108,17 +108,18 @@
 
 
 
-  <meta name="description" content="#Linux Note">
+  <meta name="description" content="Git 讲解 安装创建代码仓库git config –global user.name “tony”git config –global user.email “tony@gmail.com“ git init 提交代码git add build.gradle //添加单个文件git add app  // 添加整个目录git add . //添加所有文件 git commit -m “first">
+<meta name="keywords" content="android">
 <meta property="og:type" content="article">
-<meta property="og:title" content="linux-note">
-<meta property="og:url" content="http://zhoujw.github.io/2018/07/13/linux-note/index.html">
+<meta property="og:title" content="第一行代码">
+<meta property="og:url" content="http://zhoujw.github.io/2018/10/16/第一行代码/index.html">
 <meta property="og:site_name" content="zhoujw">
-<meta property="og:description" content="#Linux Note">
+<meta property="og:description" content="Git 讲解 安装创建代码仓库git config –global user.name “tony”git config –global user.email “tony@gmail.com“ git init 提交代码git add build.gradle //添加单个文件git add app  // 添加整个目录git add . //添加所有文件 git commit -m “first">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-13T09:59:42.350Z">
+<meta property="og:updated_time" content="2018-10-16T07:42:06.670Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="linux-note">
-<meta name="twitter:description" content="#Linux Note">
+<meta name="twitter:title" content="第一行代码">
+<meta name="twitter:description" content="Git 讲解 安装创建代码仓库git config –global user.name “tony”git config –global user.email “tony@gmail.com“ git init 提交代码git add build.gradle //添加单个文件git add app  // 添加整个目录git add . //添加所有文件 git commit -m “first">
 
 
 
@@ -127,7 +128,7 @@
 
 
 
-  <link rel="canonical" href="http://zhoujw.github.io/2018/07/13/linux-note/"/>
+  <link rel="canonical" href="http://zhoujw.github.io/2018/10/16/第一行代码/"/>
 
 
 
@@ -137,7 +138,7 @@
   };
 </script>
 
-  <title>linux-note | zhoujw</title>
+  <title>第一行代码 | zhoujw</title>
   
 
 
@@ -282,7 +283,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zhoujw.github.io/2018/07/13/linux-note/">
+    <link itemprop="mainEntityOfPage" href="http://zhoujw.github.io/2018/10/16/第一行代码/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhoujw">
@@ -299,7 +300,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">linux-note
+          <h1 class="post-title" itemprop="name headline">第一行代码
               
             
           </h1>
@@ -324,7 +325,7 @@
                 
               
 
-              <time title="Created: 2018-07-13 17:58:59 / Modified: 17:59:42" itemprop="dateCreated datePublished" datetime="2018-07-13T17:58:59+08:00">2018-07-13</time>
+              <time title="Created: 2018-10-16 15:40:40 / Modified: 15:42:06" itemprop="dateCreated datePublished" datetime="2018-10-16T15:40:40+08:00">2018-10-16</time>
             
 
             
@@ -362,7 +363,19 @@
       
 
       
-        <p>#Linux Note</p>
+        <p>Git 讲解</p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h1 id="创建代码仓库"><a href="#创建代码仓库" class="headerlink" title="创建代码仓库"></a>创建代码仓库</h1><p>git config –global user.name “tony”<br>git config –global user.email “<a href="mailto:tony@gmail.com" target="_blank" rel="noopener">tony@gmail.com</a>“</p>
+<p>git init</p>
+<h2 id="提交代码"><a href="#提交代码" class="headerlink" title="提交代码"></a>提交代码</h2><p>git add build.gradle //添加单个文件<br>git add app  // 添加整个目录<br>git add . //添加所有文件</p>
+<p>git commit -m “first commit”</p>
+<h2 id="忽略文件"><a href="#忽略文件" class="headerlink" title="忽略文件"></a>忽略文件</h2><p>在文件.gitignore中添加文件名<br>/build<br>/src/test</p>
+<p>git add .<br>git commit -m “ingore file”</p>
+<h2 id="查看修改内容"><a href="#查看修改内容" class="headerlink" title="查看修改内容"></a>查看修改内容</h2><p>git status 提示文件变化<br>git diff 看到文件的更改内容</p>
+<h2 id="撤销未提交的内容"><a href="#撤销未提交的内容" class="headerlink" title="撤销未提交的内容"></a>撤销未提交的内容</h2><p>未使用add添加到暂存区的： git checkout app/src/main/java/com/example/providertest/MainActivity.java<br>已添加到暂存区的： git reset app/src/main/java/com/example/providertest/MainActivity.java</p>
+<h2 id="查看提交记录"><a href="#查看提交记录" class="headerlink" title="查看提交记录"></a>查看提交记录</h2><p>git log</p>
+<h1 id="手机多媒体"><a href="#手机多媒体" class="headerlink" title="手机多媒体"></a>手机多媒体</h1><h2 id="通知"><a href="#通知" class="headerlink" title="通知"></a>通知</h2><p>NotificationManger对通知进行管理。<br>NotificationManger manager = (NotificationManger)getSystemService(Context.NOTIFICATION_SERVICE);</p>
+<p>Notification notification = new NotificationCompat.Builder(context).builder();</p>
+<p>##调用摄像头拍照<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Uri imageUri;</span><br><span class="line">// 创建File对象，用于存储拍照后的照片</span><br><span class="line">File outputImage = new File(getExternalCacheDir, &quot;output.ipg&quot;);</span><br><span class="line">// </span><br><span class="line">outputImage.createNewFile();</span><br><span class="line">// </span><br><span class="line">if (Build.VERSION_SDK_INT &gt;= 24)&#123;</span><br><span class="line">	imageUri = FileProvider.getUriForFile(MainActivity.this, &quot;com.example.cameraalbumtest.fileprovider&quot;,outputImage);</span><br><span class="line">&#125; else &#123;</span><br><span class="line">	imageUri = uri.fromFile(outputImage);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Intent intent = new Intent(&quot;android.media.action.IMAGE_CAPTURE&quot;);</span><br><span class="line">intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);</span><br><span class="line">startActivityForResult(intent, TAKE_PHOTO);</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -381,6 +394,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/android/" rel="tag"># android</a>
+          
+        </div>
+      
 
       
       
@@ -390,8 +409,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/12/Git Note/" rel="next" title="Git Note">
-                <i class="fa fa-chevron-left"></i> Git Note
+              <a href="/2018/07/30/retrofit2/" rel="next" title="retrofit2">
+                <i class="fa fa-chevron-left"></i> retrofit2
               </a>
             
           </div>
@@ -399,10 +418,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/07/30/retrofit2/" rel="prev" title="retrofit2">
-                retrofit2 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -451,8 +466,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -519,6 +543,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建代码仓库"><span class="nav-number">2.</span> <span class="nav-text">创建代码仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#提交代码"><span class="nav-number">2.1.</span> <span class="nav-text">提交代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#忽略文件"><span class="nav-number">2.2.</span> <span class="nav-text">忽略文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看修改内容"><span class="nav-number">2.3.</span> <span class="nav-text">查看修改内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#撤销未提交的内容"><span class="nav-number">2.4.</span> <span class="nav-text">撤销未提交的内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看提交记录"><span class="nav-number">2.5.</span> <span class="nav-text">查看提交记录</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#手机多媒体"><span class="nav-number">3.</span> <span class="nav-text">手机多媒体</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#通知"><span class="nav-number">3.1.</span> <span class="nav-text">通知</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
